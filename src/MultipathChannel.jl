@@ -53,3 +53,5 @@ function applyChan(in, chan::ChanPars; initialtime=0.0)
     end
     return rayleighwave
 end
+
+end
