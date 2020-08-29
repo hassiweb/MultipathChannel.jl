@@ -17,5 +17,5 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/hassiweb/MultipathChannel.jl",
+    repo="github.com/hassiweb/MultipathChannel.jl.git",
 )
