@@ -7,6 +7,7 @@ version = "0.1.0"
 FractionalDelayFilter = "c1b2b608-cf0a-49e8-8122-201050f5fbe7"
 
 [compat]
+FractionalDelayFilter = "0.1"
 julia = "1.4"
 
 [extras]
