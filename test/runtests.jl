@@ -1,5 +1,6 @@
 using MultipathChannel
 using Test
+using Statistics
 
 @testset "MultipathChannel.jl" begin
 
@@ -8,6 +9,9 @@ using Test
         samplingrate = 15.36e6
         channelmodel = "TDLC"
         rmsdelay = 300e-9
+
+        t = 0:0.05:50
+        sinewave = sin.(2π*t)
 
         numiters = 100
         power = Vector{Float64}(undef, numiters)
