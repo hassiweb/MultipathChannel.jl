@@ -13,7 +13,7 @@ using Statistics
         t = 0:0.05:50
         sinewave = sin.(2π*t)
 
-        numiters = 100
+        numiters = 1000
         power = Vector{Float64}(undef, numiters)
         for i = 1:numiters
             chan = initChan(maxdoppler, samplingrate, channelmodel, rmsdelay=rmsdelay)
@@ -28,7 +28,7 @@ using Statistics
         samplingrate = 15.36e6
         channelmodel = "rayleigh"
 
-        numiters = 100
+        numiters = 1000
         amp = Vector{Complex{Float64}}(undef, numiters)
         for i = 1:numiters
             chan = initChan(maxdoppler, samplingrate, channelmodel)
